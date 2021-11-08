@@ -94,7 +94,7 @@ var indexHtml = `
         }).then(response => {
             return response.text();
         }).then(data => {
-            console.log(data);
+            alert(data+" 上传成功，请刷新页面");
         });
     });
 </script>
