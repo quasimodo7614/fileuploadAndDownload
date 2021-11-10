@@ -9,24 +9,8 @@
 
 
 # 软件构建
-## 编译二进制
 ```
- GOOS=linux GOARCH=amd64 go build -o file file.go
-```
-## 查看 docker file 
-
-```
-➜  awesomeProject git:(master) ✗ cat dockerfile 
-FROM busybox
-ADD  file /
-
-ENTRYPOINT ["/file"]
-```
-
-## 打包镜像 
-
-```
- docker build -t file:latest   .
+docker build -t  quasimodo7017/dev:v1.0.0 .
 ```
 
 # 软件部署
